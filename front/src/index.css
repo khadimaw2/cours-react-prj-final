@@ -1,0 +1,101 @@
+/* Styles globaux */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+
+/* Styles pour le conteneur principal */
+.content-container {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  min-height: calc(100vh - 56px);
+}
+
+/* Styles pour les thumbnails vidéo */
+.video-thumbnail {
+  position: relative;
+  overflow: hidden;
+}
+
+.video-thumbnail .play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.video-thumbnail:hover .play-icon {
+  opacity: 1;
+}
+
+/* Styles pour les cartes et tableaux */
+.card {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Styles pour les modals */
+.modal-backdrop.show {
+  opacity: 0.7;
+}
+
+/* Styles pour les formulaires */
+.form-control:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Styles pour la navbar */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour les boutons */
+.btn {
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+/* Styles pour les alertes */
+.alert {
+  border-radius: 4px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
